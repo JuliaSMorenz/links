@@ -1,0 +1,117 @@
+/* CSS externo */
+/* 
+seletor{
+    propriedade: valor;
+}
+*/
+
+:root{
+    --primary: #00010D;
+    --background-div: #F2E205;
+    --cursor: #735703;
+    --subtitle: #735702;
+    --clicks: #c29307;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary); /* cor de fundo */
+}
+
+div{
+    background-color: var(--background-div);
+
+    width: 60%;
+    max-width: 340px; /*largura (340 + 60 de padding)*/
+    margin-top: 100px; /*provisório*/
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 30px; /*espaçamento interno*/
+    text-align: center;
+    border-radius: 10px;
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--cursor);
+
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: #735703; */
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h1{
+    color: var(--primary); /*cor da fonte */
+    font-size: 32px;
+}
+
+h2{
+    color: var(--subtitle);
+    font-size: 20px;
+}
+
+p{
+    color: var(--primary);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+/*Links que estão DENTRO de um <li>*/
+li a{
+    color: #FFFFFF;
+    background-color: var(--primary);
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+/*ao passar o mouse*/
+li a:hover{
+    background-color: var(--cursor);
+}
+
+/*ao clicar*/
+li a:active{
+    background-color: var(--clicks);
+}
+
+/*formatando o id copyright*/
+#copyright{
+    color: var(--primary);
+    font-size: 16px;
+}
+
+/*MEDIA QUERY*/
+
+/*para telas de 1200 pra cima*/
+@media (min-width: 1280px){
+
+    #link-app{
+        display: none;
+    }
+
+}
+
+/*para telas de até 414px*/
+@media (max-width:414px){
+    div{
+        margin-top: 50px;
+    }
+}
