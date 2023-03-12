@@ -60,6 +60,8 @@ h2{
 
 p{
     color: var(--primary);
+    margin-top: 11px;
+    margin-bottom: 33px;
 }
 
 ul{
@@ -100,7 +102,7 @@ li a:active{
 
 /*MEDIA QUERY*/
 
-/*para telas de 1200 pra cima*/
+/*para telas de 1200 pra cima
 @media (min-width: 1280px){
 
     #link-app{
@@ -109,9 +111,9 @@ li a:active{
 
 }
 
-/*para telas de até 414px*/
+para telas de até 414px
 @media (max-width:414px){
     div{
         margin-top: 50px;
     }
-}
+}*/
